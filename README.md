@@ -1,8 +1,8 @@
 ## COMPETENCIA: 220501092. 
-### Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
+#### Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
 
 ## RESULTADO DE APRENDIZAJE: 
-### 220501092_01. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
+#### 220501092_01. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
 
 ## Conceptos y Principios
 
