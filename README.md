@@ -27,4 +27,4 @@
 - Elabora diagrama de procesos identificando áreas de incidencia directa con el sistema de información a construir.
 - Reconoce las fronteras y el contexto del sistema de acuerdo con el alcance del proyecto.
 
-**<div align="center"><a href="GUÍA_220501092_01%20-%20Caracterizar%20los%20procesos.md">IR A LA GUÍA</a></div>**
+**<div align="center"><a href="guia_220501092_01_caracterizar_procesos.md">IR A LA GUÍA</a></div>**
