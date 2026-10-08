@@ -1,8 +1,12 @@
-## GUÍA_220501092_01
+# COMPETENCIA: 220501092.
 
-**[]()**
+Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
 
-**[Caracterizar los procesos de la organización de acuerdo con el software a construir](GUÍA_220501092_01%20-%20Caracterizar%20los%20procesos.md)**
+## RESULTADO DE APRENDIZAJE: 
+
+220501092_01. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
+
+**[Ir a la Guía](GUÍA_220501092_01%20-%20Caracterizar%20los%20procesos.md)**
 
 ## Conceptos y Principios
 
