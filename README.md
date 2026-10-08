@@ -1,10 +1,8 @@
-## COMPETENCIA: 220501092. <br>Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
+## COMPETENCIA: 220501092. 
+### Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
 
 ## RESULTADO DE APRENDIZAJE: 
-
-220501092_01. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
-
-**[Ir a la Guía](GUÍA_220501092_01%20-%20Caracterizar%20los%20procesos.md)**
+### 220501092_01. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
 
 ## Conceptos y Principios
 
@@ -28,3 +26,5 @@
 - Aplica técnicas de análisis de procesos, siguiendo la metodología establecida.
 - Elabora diagrama de procesos identificando áreas de incidencia directa con el sistema de información a construir.
 - Reconoce las fronteras y el contexto del sistema de acuerdo con el alcance del proyecto.
+
+**<div align="center"><a href="GUÍA_220501092_01%20-%20Caracterizar%20los%20procesos.md">IR A LA GUÍA</a></div>**
