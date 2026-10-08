@@ -2,9 +2,7 @@
 
 --- 
 
-**<div align="center">RESULTADO DE APRENDIZAJE<br>220501092_01</div>**
-
-### Caracterizar los procesos de la organización de acuerdo con el software a construir.
+**<h2 align="center">RESULTADO DE APRENDIZAJE<br>220501092_01<br>Caracterizar los procesos de la organización de acuerdo con el software a construir</h2>**
 
 ---
 
