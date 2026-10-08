@@ -1,8 +1,10 @@
 ## GUÍA_220501092_01
 
-**[Caracterizar los procesos de la organización de acuerdo con el software a construir](GUÍA_220501092_01 - Caracterizar los procesos.md)**
+**[]()**
 
-### Conceptos y Principios
+**[Caracterizar los procesos de la organización de acuerdo con el software a construir](GUÍA_220501092_01%20-%20Caracterizar%20los%20procesos.md)**
+
+## Conceptos y Principios
 
 - Teoría general de sistemas: orígenes, conceptos.
 - Enfoque sistémico: concepto, características, aplicación, organizaciones inteligentes.
@@ -12,13 +14,13 @@
 - Metodologías de desarrollo: conceptos, tipos.
 - Procesos: definición, características, entradas, componentes, representación gráfica, procedimientos, Modelo de Procesos de Negocio (BPM).
 
-### Procesos
+## Procesos
 
 - Identificar procesos de la organización
 - Aplicar técnicas de análisis de procesos
 - Elaborar diagrama de procesos
 
-### Criterios de Evaluación
+## Criterios de Evaluación
 
 - Identifica procesos de la organización de acuerdo con la estructura organizacional de la empresa y los requerimientos del cliente.
 - Aplica técnicas de análisis de procesos, siguiendo la metodología establecida.
