@@ -1,4 +1,4 @@
-<h3 align="center">COMPETENCIA: 220501092<br>Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico</h3>
+<h3 align="left">COMPETENCIA: 220501092<br>Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico</h3>
 
 --- 
 
