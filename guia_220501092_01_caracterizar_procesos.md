@@ -1,4 +1,11 @@
-<img href="logo_sena.png" align="center">
+<div align="center">
+  <img src="logo_sena.png" alt="Descripción" width="100">
+</div>
+
+![Logo Sena](logo_sena.png)
+
+
+<h3 align="center">RESULTADO DE APRENDIZAJE<br><ins>220501092_01</ins><br>Caracterizar los procesos de la organización de acuerdo con el software a construir</h3><hr>
 
 # PROCESO DE GESTIÓN DE FORMACIÓN PROFESIONAL INTEGRAL
 ## FORMATO GUÍA DE APRENDIZAJE
