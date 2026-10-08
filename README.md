@@ -2,8 +2,7 @@
 
 --- 
 
-### RESULTADO DE APRENDIZAJE: 220501092_01
-#### Caracterizar los procesos de la organización de acuerdo con el software a construir.
+## RESULTADO DE APRENDIZAJE: 220501092_01. Caracterizar los procesos de la organización de acuerdo con el software a construir.
 
 --- 
 
