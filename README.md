@@ -1,5 +1,5 @@
-<h4 align="center">COMPETENCIA: 220501092</h4>
-<h4 align="center">Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico</h4>
+<h2 align="center">COMPETENCIA: 220501092</h2>
+<p align="center">Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico</p>
 
 ## RESULTADO DE APRENDIZAJE: 
 #### 220501092_01. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
