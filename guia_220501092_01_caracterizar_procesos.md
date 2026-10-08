@@ -1,4 +1,4 @@
-![Logo Sena](logo_sena.png)
+<h3 align="center">![Logo Sena](logo_sena.png)</h3>
 
 # PROCESO DE GESTIÓN DE FORMACIÓN PROFESIONAL INTEGRAL
 ## FORMATO GUÍA DE APRENDIZAJE
