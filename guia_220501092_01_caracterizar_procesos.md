@@ -1,14 +1,11 @@
 <div align="center">
-  <img src="logo_sena.png" alt="Descripción" width="100">
+  <img src="logo_sena.png" alt="Descripción">
 </div>
 
-![Logo Sena](logo_sena.png)
+<h3 align="center">PROCESO DE GESTIÓN DE FORMACIÓN PROFESIONAL INTEGRAL<br>FORMATO GUÍA DE APRENDIZAJE</h3><hr>
 
-
-<h3 align="center">RESULTADO DE APRENDIZAJE<br><ins>220501092_01</ins><br>Caracterizar los procesos de la organización de acuerdo con el software a construir</h3><hr>
-
-# PROCESO DE GESTIÓN DE FORMACIÓN PROFESIONAL INTEGRAL
-## FORMATO GUÍA DE APRENDIZAJE
+# 
+## 
 
 ### 1. IDENTIFICACIÓN DE LA GUÍA DE APRENDIZAJE
 
