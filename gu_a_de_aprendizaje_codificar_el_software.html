@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Aprendizaje - Codificar el Software (220501096_04)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sena: {
+                            green: '#39A900',
+                            blue: '#00324D',
+                            darkBlue: '#001E30',
+                            lightBg: '#F4F7F6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #39A900;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2e8800;
+        }
+    </style>
+</head>
+<body class="bg-sena-lightBg text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-sena-blue text-white shadow-lg border-b-4 border-sena-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo & Title -->
+                <div class="flex items-center space-x-3">
+                    <div class="bg-sena-green p-2 rounded-lg text-white font-bold text-xl">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg leading-tight">ADSO - Guía de Aprendizaje</h1>
+                        <p class="text-xs text-emerald-300">RAP04 - Codificar el Software (220501096)</p>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex items-center relative w-72">
+                    <input type="text" id="searchInput" placeholder="Buscar concepto o tema..." 
+                           class="w-full bg-sena-darkBlue text-sm text-white placeholder-slate-400 rounded-full py-1.5 pl-9 pr-4 focus:outline-none focus:ring-2 focus:ring-sena-green border border-slate-700">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 text-slate-400 text-sm"></i>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-white hover:text-sena-green focus:outline-none text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-1 flex max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 gap-6">
+
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="hidden md:block w-64 flex-shrink-0">
+            <nav class="sticky top-24 bg-white p-4 rounded-xl shadow-sm border border-slate-200 space-y-1">
+                <p class="px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Contenido</p>
+                <a href="#identificacion" class="nav-link flex items-center px-3 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-emerald-50 hover:text-sena-green transition-all">
+                    <i class="fa-solid fa-id-card w-6 text-sena-green"></i> 1. Identificación
+                </a>
+                <a href="#presentacion" class="nav-link flex items-center px-3 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-emerald-50 hover:text-sena-green transition-all">
+                    <i class="fa-solid fa-chalkboard-user w-6 text-sena-green"></i> 2. Presentación
+                </a>
+                <a href="#actividades" class="nav-link flex items-center px-3 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-emerald-50 hover:text-sena-green transition-all">
+                    <i class="fa-solid fa-tasks w-6 text-sena-green"></i> 3. Actividades
+                </a>
+                <a href="#evaluacion" class="nav-link flex items-center px-3 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-emerald-50 hover:text-sena-green transition-all">
+                    <i class="fa-solid fa-clipboard-check w-6 text-sena-green"></i> 4. Evaluación
+                </a>
+                <a href="#glosario" class="nav-link flex items-center px-3 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-emerald-50 hover:text-sena-green transition-all">
+                    <i class="fa-solid fa-book w-6 text-sena-green"></i> 5. Glosario
+                </a>
+                <a href="#referencias" class="nav-link flex items-center px-3 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-emerald-50 hover:text-sena-green transition-all">
+                    <i class="fa-solid fa-bookmark w-6 text-sena-green"></i> 6. Referentes
+                </a>
+                <a href="#control" class="nav-link flex items-center px-3 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-emerald-50 hover:text-sena-green transition-all">
+                    <i class="fa-solid fa-file-signature w-6 text-sena-green"></i> 7. Control
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Container -->
+        <main class="flex-1 space-y-8">
+
+            <!-- 1. IDENTIFICACIÓN -->
+            <section id="identificacion" class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex items-center space-x-3 mb-6 border-b pb-3">
+                    <i class="fa-solid fa-id-card text-2xl text-sena-green"></i>
+                    <h2 class="text-xl font-bold text-sena-blue">1. Identificación de la Guía de Aprendizaje</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100">
+                        <span class="text-xs text-slate-500 block">Programa de Formación</span>
+                        <strong class="text-slate-800">ADSO. Análisis y Desarrollo de Software</strong> (Código: 228118_V1)
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100">
+                        <span class="text-xs text-slate-500 block">Proyecto Formativo</span>
+                        <strong class="text-slate-800">2386943. Construcción de software para integrar tecnologías orientadas a servicios.</strong>
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100">
+                        <span class="text-xs text-slate-500 block">Fase & Actividad de Proyecto</span>
+                        <strong class="text-slate-800">Fase Ejecución</strong> / Codificar los Módulos del Software.
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100">
+                        <span class="text-xs text-slate-500 block">Competencia</span>
+                        <strong class="text-slate-800">220501096. Construcción del software de acuerdo con el diseño y metodologías de desarrollo.</strong>
+                    </div>
+                    <div class="bg-emerald-50 p-3.5 rounded-lg border border-emerald-100 md:col-span-2">
+                        <span class="text-xs text-sena-green font-semibold block">Resultado de Aprendizaje (RAP)</span>
+                        <strong class="text-sena-blue text-base">220501096_04. Codificar el software de acuerdo con el diseño establecido.</strong>
+                    </div>
+                </div>
+
+                <div class="mt-4 inline-flex items-center gap-2 bg-sena-blue text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                    <i class="fa-regular fa-clock"></i> Duración de la Guía: 784 Horas (600h de esta guía específica)
+                </div>
+            </section>
+
+            <!-- 2. PRESENTACIÓN -->
+            <section id="presentacion" class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex items-center space-x-3 mb-4 border-b pb-3">
+                    <i class="fa-solid fa-chalkboard-user text-2xl text-sena-green"></i>
+                    <h2 class="text-xl font-bold text-sena-blue">2. Presentación</h2>
+                </div>
+
+                <div class="prose max-w-none text-slate-600 text-sm leading-relaxed space-y-4">
+                    <p>
+                        En el dinámico mercado laboral de las <strong>Industrias 4.0</strong>, las organizaciones demandan soluciones altamente accesibles y conectadas que operen en tiempo real a través de la web y de dispositivos móviles. Tras superar la fase de diseño arquitectónico, este es el momento cumbre donde los requerimientos técnicos y los modelos lógicos se transforman en <strong>código fuente funcional</strong>.
+                    </p>
+                    <p>
+                        Escribir código de alta calidad requiere la aplicación rigurosa de saberes técnicos como el <em>Paradigma Orientado a Objetos</em>, uso de lenguajes modernos (Java, Python, PHP, C#, Ruby), manejo de Frameworks, Servicios Web (REST/SOAP) y protocolos de seguridad para mitigar amenazas como el <strong>SQL Injection</strong>.
+                    </p>
+                    <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-sena-green text-slate-700">
+                        <strong>Resultados que integran la competencia:</strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-xs sm:text-sm">
+                            <li>[01] Planear actividades de construcción</li>
+                            <li>[02] Construir la base de datos</li>
+                            <li>[03] Crear componentes front-end</li>
+                            <li class="font-bold text-sena-green">[04] Codificar el software de acuerdo con el diseño establecido (Enfoque de esta guía)</li>
+                            <li>[05] Realizar pruebas al software</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. ACTIVIDADES DE APRENDIZAJE -->
+            <section id="actividades" class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex items-center space-x-3 mb-6 border-b pb-3">
+                    <i class="fa-solid fa-tasks text-2xl text-sena-green"></i>
+                    <h2 class="text-xl font-bold text-sena-blue">3. Formulación de las Actividades de Aprendizaje</h2>
+                </div>
+
+                <!-- Resumen de Horas (Cards) -->
+                <div class="mb-8">
+                    <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Resumen Global de Horas</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                        <div class="bg-blue-50 p-3 rounded-lg border border-blue-100">
+                            <span class="block text-xl font-bold text-blue-700">18 h</span>
+                            <span class="text-xs text-blue-600 font-medium">3.1 Reflexión</span>
+                        </div>
+                        <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                            <span class="block text-xl font-bold text-sena-green">72 h</span>
+                            <span class="text-xs text-emerald-600 font-medium">3.2 Contextualización</span>
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg border border-amber-100">
+                            <span class="block text-xl font-bold text-amber-700">390 h</span>
+                            <span class="text-xs text-amber-600 font-medium">3.3 Apropiación</span>
+                        </div>
+                        <div class="bg-purple-50 p-3 rounded-lg border border-purple-100">
+                            <span class="block text-xl font-bold text-purple-700">120 h</span>
+                            <span class="text-xs text-purple-600 font-medium">3.4 Transferencia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Momentos Accordeon/Tabs -->
+                <div class="space-y-4">
+                    
+                    <!-- 3.1 Reflexión -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <button onclick="toggleAccordion('act31')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-semibold text-slate-800">
+                            <span>3.1 Actividades de Reflexión Inicial (18 Horas)</span>
+                            <i id="icon-act31" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div id="act31" class="hidden p-4 space-y-3 bg-white text-sm text-slate-600 border-t">
+                            <p class="italic bg-amber-50 border-l-2 border-amber-400 p-3 rounded text-amber-900">
+                                "Imagine que trabaja en una plataforma de comercio electrónico. Debido a la urgencia, se decide omitir estándares de codificación y GIT. Días después hay una vulnerabilidad crítica y es imposible saber qué causó el error..."
+                            </p>
+                            <p><strong>Evidencia:</strong> Resolver el cuestionario <code>AA01_EC01 - Cuestionario I.docx</code> localizado en la carpeta <code>AA - Actividades de Aprendizaje / AA01 - Reflexión Inicial</code>.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3.2 Contextualización -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <button onclick="toggleAccordion('act32')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-semibold text-slate-800">
+                            <span>3.2 Contextualización e Identificación de Conocimientos (72 Horas)</span>
+                            <i id="icon-act32" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div id="act32" class="hidden p-4 space-y-4 bg-white text-sm text-slate-600 border-t">
+                            <p>Fundamentos teóricos revisados en el material multimedia (MA01 - MA11):</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                                <div class="p-2 border rounded bg-slate-50"><strong class="text-sena-blue">Entornos de Desarrollo:</strong> IDEs, ecosistemas de integración continua.</div>
+                                <div class="p-2 border rounded bg-slate-50"><strong class="text-sena-blue">POO:</strong> Encapsulamiento, abstracción, clases y objetos.</div>
+                                <div class="p-2 border rounded bg-slate-50"><strong class="text-sena-blue">Frameworks Back-End:</strong> Infraestructura reutilizable y patrones.</div>
+                                <div class="p-2 border rounded bg-slate-50"><strong class="text-sena-blue">Seguridad:</strong> Validación de datos y prevención de SQL Injection.</div>
+                                <div class="p-2 border rounded bg-slate-50"><strong class="text-sena-blue">Control de Versiones:</strong> Trazabilidad y trabajo en equipo con GIT.</div>
+                                <div class="p-2 border rounded bg-slate-50"><strong class="text-sena-blue">Servidores y APIs:</strong> Arquitecturas distribuidas y REST/JSON.</div>
+                                <div class="p-2 border rounded bg-slate-50"><strong class="text-sena-blue">Tecnologías Emergentes:</strong> Cloud, IoT, Blockchain y Machine Learning.</div>
+                            </div>
+                            <p><strong>Evidencia:</strong> Resolver cuestionario <code>AA02_EC02 - Cuestionario II.docx</code>.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3.3 Apropiación -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <button onclick="toggleAccordion('act33')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-semibold text-slate-800">
+                            <span>3.3 Apropiación del Conocimiento (390 Horas)</span>
+                            <i id="icon-act33" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div id="act33" class="hidden p-4 space-y-3 bg-white text-sm text-slate-600 border-t">
+                            <p>Poner en práctica la codificación de módulos web y móviles, servicios web (APIs), seguridad y control de versiones.</p>
+                            <p><strong>Evidencias de desempeño:</strong> Taller <code>AA03_ED01 - Taller I.docx</code> y Prácticas Guiadas (<code>AA03_ED02</code> a <code>AA03_ED08</code>).</p>
+                        </div>
+                    </div>
+
+                    <!-- 3.4 Transferencia -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <button onclick="toggleAccordion('act34')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-semibold text-slate-800">
+                            <span>3.4 Transferencia de Conocimiento (120 Horas)</span>
+                            <i id="icon-act34" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div id="act34" class="hidden p-4 space-y-3 bg-white text-sm text-slate-600 border-t">
+                            <p>Aplicación de saberes al desarrollo del proyecto formativo real.</p>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li><strong>Evaluación individual:</strong> <code>AA04_EC03 – Evaluación I</code></li>
+                                <li><strong>Entregable de proyecto en GAES:</strong> <code>AA04_EP01 - Entregables de Proyecto.docx</code></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 4. ACTIVIDADES DE EVALUACIÓN -->
+            <section id="evaluacion" class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex items-center space-x-3 mb-6 border-b pb-3">
+                    <i class="fa-solid fa-clipboard-check text-2xl text-sena-green"></i>
+                    <h2 class="text-xl font-bold text-sena-blue">4. Plan de Evaluación</h2>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-sena-blue text-white">
+                                <th class="p-3 font-semibold rounded-tl-lg">Evidencias de Aprendizaje</th>
+                                <th class="p-3 font-semibold">Criterios de Evaluación</th>
+                                <th class="p-3 font-semibold rounded-tr-lg">Técnicas e Instrumentos</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-medium text-slate-800">
+                                    <strong class="text-sena-green block">Conocimiento:</strong>
+                                    AA01_EC01, AA02_EC02, AA04_EC03
+                                </td>
+                                <td class="p-3 text-slate-600" rowspan="3">
+                                    • Codifica módulos de software stand-alone, web y móvil según especificaciones y estándares.<br>
+                                    • Crea servicios web con métodos reutilizables.<br>
+                                    • Integra módulos del software según propósitos del sistema.<br>
+                                    • Incorpora tecnologías emergentes/disruptivas.
+                                </td>
+                                <td class="p-3 text-slate-700 font-semibold">Cuestionarios y Evaluación</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-medium text-slate-800">
+                                    <strong class="text-sena-green block">Desempeño:</strong>
+                                    AA03_ED01 (Taller I) y Prácticas Guiadas (ED02 - ED08)
+                                </td>
+                                <td class="p-3 text-slate-700 font-semibold">Taller y Prácticas Guiadas</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-medium text-slate-800">
+                                    <strong class="text-sena-green block">Producto:</strong>
+                                    AA04_EP01 (Entregables del Proyecto)
+                                </td>
+                                <td class="p-3 text-slate-700 font-semibold">Lista de Chequeo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 5. GLOSARIO DE TÉRMINOS -->
+            <section id="glosario" class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex items-center justify-between border-b pb-3 mb-6">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-book text-2xl text-sena-green"></i>
+                        <h2 class="text-xl font-bold text-sena-blue">5. Glosario de Términos</h2>
+                    </div>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-semibold">10 Conceptos</span>
+                </div>
+
+                <div id="glosarioGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Cards dinámicas o estáticas -->
+                    <div class="glosario-card p-4 rounded-lg border border-slate-100 bg-slate-50 hover:shadow-md transition-all">
+                        <h3 class="font-bold text-sena-blue text-sm mb-1">API (Application Programming Interface)</h3>
+                        <p class="text-xs text-slate-600">Conjunto de definiciones y protocolos que permite comunicación entre aplicaciones mediante estándares como REST o SOAP.</p>
+                    </div>
+                    <div class="glosario-card p-4 rounded-lg border border-slate-100 bg-slate-50 hover:shadow-md transition-all">
+                        <h3 class="font-bold text-sena-blue text-sm mb-1">Blockchain</h3>
+                        <p class="text-xs text-slate-600">Registro distribuido e inmutable que asegura transacciones auditables y resistentes a la manipulación.</p>
+                    </div>
+                    <div class="glosario-card p-4 rounded-lg border border-slate-100 bg-slate-50 hover:shadow-md transition-all">
+                        <h3 class="font-bold text-sena-blue text-sm mb-1">Cloud Computing</h3>
+                        <p class="text-xs text-slate-600">Servicios de computación, almacenamiento y software elásticos accesibles por internet.</p>
+                    </div>
+                    <div class="glosario-card p-4 rounded-lg border border-slate-100 bg-slate-50 hover:shadow-md transition-all">
+                        <h3 class="font-bold text-sena-blue text-sm mb-1">Control de Versiones (GIT)</h3>
+                        <p class="text-xs text-slate-600">Sistema para gestionar cambios en el código, asegurando trazabilidad y trabajo colaborativo.</p>
+                    </div>
+                    <div class="glosario-card p-4 rounded-lg border border-slate-100 bg-slate-50 hover:shadow-md transition-all">
+                        <h3 class="font-bold text-sena-blue text-sm mb-1">Framework</h3>
+                        <p class="text-xs text-slate-600">Estructura reutilizable con patrones de diseño para agilizar la construcción de software.</p>
+                    </div>
+                    <div class="glosario-card p-4 rounded-lg border border-slate-100 bg-slate-50 hover:shadow-md transition-all">
+                        <h3 class="font-bold text-sena-blue text-sm mb-1">SQL Injection</h3>
+                        <p class="text-xs text-slate-600">Vulnerabilidad de seguridad provocada por inserción de código SQL malicioso en entradas de datos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. REFERENCIAS BIBLIOGRÁFICAS -->
+            <section id="referencias" class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex items-center space-x-3 mb-4 border-b pb-3">
+                    <i class="fa-solid fa-bookmark text-2xl text-sena-green"></i>
+                    <h2 class="text-xl font-bold text-sena-blue">6. Referentes Bibliográficos</h2>
+                </div>
+
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-600 pl-4 list-disc">
+                    <li>IEEE Computer Society. (2004). <em>SWEBOK: Guide to the Software Engineering Body of Knowledge</em>. IEEE Press.</li>
+                    <li>Joyanes Aguilar, L. (2008). <em>Fundamentos de programación: Algoritmos, estructuras de datos y objetos</em> (4ta ed.). McGraw-Hill.</li>
+                    <li>Joyanes Aguilar, L. (2012). <em>Computación en la nube: Estrategias de Cloud Computing en las empresas</em>. Alfaomega.</li>
+                    <li>Piattini, M. G., García Rubio, F. O., & Caballero, I. (2007). <em>Calidad de sistemas informáticos</em>. Alfaomega.</li>
+                    <li>Pressman, R. S. (2010). <em>Ingeniería del software: Un enfoque práctico</em> (7ma ed.). McGraw-Hill.</li>
+                    <li>Sommerville, I. (2005). <em>Ingeniería de software</em> (7ma ed.). Pearson Educación.</li>
+                    <li>Varón Quintero, J. E. (2021). <em>Técnicas para formular proyectos de software e ingeniería web</em>. Ecoe Ediciones.</li>
+                </ul>
+            </section>
+
+            <!-- 7. CONTROL DEL DOCUMENTO -->
+            <section id="control" class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex items-center space-x-3 mb-4 border-b pb-3">
+                    <i class="fa-solid fa-file-signature text-2xl text-sena-green"></i>
+                    <h2 class="text-xl font-bold text-sena-blue">7. Control del Documento y Cambios</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h3 class="font-bold text-sena-blue mb-2">Control del Documento</h3>
+                        <p><strong>Autor:</strong> Albeiro Ramos Villamil</p>
+                        <p><strong>Cargo:</strong> Instructor</p>
+                        <p><strong>Dependencia:</strong> CEET</p>
+                        <p><strong>Fecha:</strong> 23/04/2026</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h3 class="font-bold text-sena-blue mb-2">Control de Cambios</h3>
+                        <p><strong>Razón del cambio:</strong> Diseño de la Guía</p>
+                        <p><strong>Fecha:</strong> 23/04/2026</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-sena-darkBlue text-slate-400 text-xs text-center py-4 mt-8 border-t border-slate-800">
+        <p>Servicio Nacional de Aprendizaje SENA - Centro de Electricidad, Electrónica y Telecomunicaciones (CEET)</p>
+        <p class="mt-1">ADSO - Análisis y Desarrollo de Software</p>
+    </footer>
+
+    <!-- JavaScript Interactive Logic -->
+    <script>
+        // Toggle Mobile Menu
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+        });
+
+        // Toggle Accordion
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Search Filter Logic
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.glosario-card');
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
