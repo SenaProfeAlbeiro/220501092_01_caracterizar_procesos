@@ -1,6 +1,6 @@
-**<h2 align="center">RESULTADO DE APRENDIZAJE<br>220501092_01<br>Caracterizar los procesos de la organización de acuerdo con el software a construir</h2>**
+**<h3 align="center">RESULTADO DE APRENDIZAJE<br><ins>220501092_01</ins><br>Caracterizar los procesos de la organización de acuerdo con el software a construir</h3>**
 
-#### COMPETENCIA:<br><ins>**220501092**</ins>. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
+#### COMPETENCIA <ins>**220501092**</ins>: Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
 
 ---
 
