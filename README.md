@@ -1,4 +1,4 @@
-### COMPETENCIA: 220501092. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
+### COMPETENCIA: 220501092.<br>Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
 
 --- 
 
