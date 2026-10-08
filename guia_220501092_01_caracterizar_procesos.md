@@ -72,7 +72,7 @@ Se recomienda al aprendiz que, para el correcto desarrollo de las actividades, t
 
 ---
 
-#### 3.1 Actividades de Reflexión Inicial
+## 3.1 Actividades de Reflexión Inicial
 
 > Imagine que trabaja en un Proyecto Software desarrollando una plataforma de comercio electrónico. Debido a la urgencia, se decide omitir los estándares de codificación y no configurar el control de versiones (GIT). Días después, se detecta una vulnerabilidad crítica y, al no existir documentación ni historial en GIT, es imposible saber qué cambios causaron el error o volver a una versión estable del sistema.
 
